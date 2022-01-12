@@ -74,6 +74,8 @@ function rickroll(e) {
 	e.preventDefault();
 	link.remove();
 	
+	navigator.clipboard.writeText(lyrics);
+	
 	lyricText.className = "";
 	lyricText.innerText = "";
 	
